@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CHROMA_PATH = str(ROOT / "chroma_db")
 
 client = chromadb.PersistentClient(path=CHROMA_PATH)
-collection = client.get_collection("kb")  # kb_ingest.py ne ye banaya tha
+collection = client.get_collection("support_kb")  # kb_ingest.py ne ye banaya tha
 
 SYSTEM = """You are a customer support assistant for an e-commerce store.
 Answer ONLY using the provided context.
