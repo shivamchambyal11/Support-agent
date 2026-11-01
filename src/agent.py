@@ -13,7 +13,8 @@ Rules:
 - Set damaged=true only if the customer says the item is damaged or wrong.
 - If a tool returns an error, explain it to the customer simply. Do not retry the same call.
 - If a refund needs human approval, tell the customer it is sent for review.
-- For policy questions (returns, refunds, shipping, warranty), call search_policy and answer only from its results. Do not answer policies from your own knowledge."""
+- For policy questions (returns, refunds, shipping, warranty), call search_policy and answer only from its results. Do not answer policies from your own knowledge.
+- If the question needs both order data and policy information, call both the order tool and search_policy before answering."""
 
 
 def make_tools(customer_id: int):
