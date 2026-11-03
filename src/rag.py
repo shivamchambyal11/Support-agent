@@ -1,9 +1,9 @@
 from pathlib import Path
 
 import chromadb
-from llm import generate  # src/llm.py se aata hai (pichle message wali file)
+from llm import generate  # src/llm.py se aata hai 
 
-# Project root se chroma_db ka path (kisi bhi folder se chalao, chalega)
+
 ROOT = Path(__file__).resolve().parent.parent
 CHROMA_PATH = str(ROOT / "chroma_db")
 

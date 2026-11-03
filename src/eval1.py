@@ -5,7 +5,7 @@ from mock_db import init
 
 RUNS = 3  # har case kitni baar chalana hai
 
-# (customer, sawal, jo tools chalne chahiye, jo nahi chalne chahiye)
+# (customer, question, jo tools chalne chahiye, jo nahi chalne chahiye)
 cases = [
     (1, "Refund kitne din mein aata hai?", ["search_policy"], ["get_order"]),
     (1, "Order 1 ka status batao", ["get_order"], ["search_policy"]),
